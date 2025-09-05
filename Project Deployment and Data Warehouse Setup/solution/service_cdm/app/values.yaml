@@ -1,0 +1,55 @@
+# Default values for app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: cr.yandex/crp586ae3cqor6r77a7h/cdm_service 
+  pullPolicy: Always
+  tag: "v2025-07-01-r2"
+
+containerPort: 5000
+
+config:
+  FLASK_APP: "cdm_service"
+  DEBUG: "True"
+
+  # Kafka
+  KAFKA_HOST: "rc1a-3tcu3d0dj8bm3blo.mdb.yandexcloud.net"
+  KAFKA_PORT: "9091"
+  KAFKA_CONSUMER_USERNAME: "producer_consumer"
+  KAFKA_CONSUMER_PASSWORD: "Tanya-159487"
+  KAFKA_CONSUMER_GROUP: "cdm-demidova"
+  KAFKA_SOURCE_TOPIC: "dds-service-orders"
+  KAFKA_SSL_CERT: "/crt/YandexInternalRootCA.crt"
+
+  KAFKA_SOCKET_TIMEOUT_MS: "30000"
+  KAFKA_SESSION_TIMEOUT_MS: "30000"
+
+
+  # PostgreSQL
+  PG_WAREHOUSE_HOST: "rc1b-k22dmf7k5nj91h6e.mdb.yandexcloud.net"
+  PG_WAREHOUSE_PORT: "6432"
+  PG_WAREHOUSE_DBNAME: "sprint9dwh"
+  PG_WAREHOUSE_USER: "producer_user"
+  PG_WAREHOUSE_PASSWORD: "Tanya-159487"
+
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
