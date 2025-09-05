@@ -1,8 +1,5 @@
- _____________________________________________________________________________
-|                         Data Engineering Project №3:                        |
-|                                                                             |
-|                  Analytical Data Warehouse Development                      |
-|_____________________________________________________________________________|
+# Data Engineering Project №3:
+# Analytical Data Warehouse Development
 
 # Project Overview
 
