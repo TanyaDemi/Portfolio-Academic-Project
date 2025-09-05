@@ -12,22 +12,22 @@ The implementation was part of a training sprint and focused on hands-on practic
 with ETL orchestration, staging schema design, and Data Vault modeling.
 
 ## Repository Structure
-├── src/
-│   ├── dags/
-│   │   ├── dags_for_groups.py                # Loads raw CSV files from S3 to local machine for inspection
-│   │   ├── Vertica_init_dag_STG.py           # Creates schema and staging tables in Vertica (suffix "_csv")
-│   │   ├── Vertica_dag_by_YP_users_csv.py    # Loads users CSV data from S3 into Vertica STG
-│   │   ├── Vertica_dag_by_YP_groups_csv.py   # Loads groups CSV data from S3 into Vertica STG
-│   │   ├── Vertica_dag_by_YP_dialogs_csv.py  # Loads dialogs CSV data from S3 into Vertica STG
-│   │   └── Vertica_dag_by_YP_group_log_csv.py# Loads group logs CSV data from S3 into Vertica STG
-│   │
-│   ├── sql/
-│   │   ├── 6_STG_tables_users_groups_dialogs_group_log.sql   # Creates staging tables with filters and keys
-│   │   ├── 7_DDS_tables_in_data_Vault.sql                    # DDS layer tables (Data Vault model, sprint)
-│   │   ├── 8_DDS_tables_in_data_Vault_project.sql            # DDS layer tables (Data Vault model, project)
-│   │   └── 9_CTE_tables_for_business.sql                     # Business CTEs and analytical queries
-│
-└── README.md
+    ├── src/
+    │   ├── dags/
+    │   │   ├── dags_for_groups.py                # Loads raw CSV files from S3 to local machine for inspection
+    │   │   ├── Vertica_init_dag_STG.py           # Creates schema and staging tables in Vertica (suffix "_csv")
+    │   │   ├── Vertica_dag_by_YP_users_csv.py    # Loads users CSV data from S3 into Vertica STG
+    │   │   ├── Vertica_dag_by_YP_groups_csv.py   # Loads groups CSV data from S3 into Vertica STG
+    │   │   ├── Vertica_dag_by_YP_dialogs_csv.py  # Loads dialogs CSV data from S3 into Vertica STG
+    │   │   └── Vertica_dag_by_YP_group_log_csv.py# Loads group logs CSV data from S3 into Vertica STG
+    │   │
+    │   ├── sql/
+    │   │   ├── 6_STG_tables_users_groups_dialogs_group_log.sql   # Creates staging tables with filters and keys
+    │   │   ├── 7_DDS_tables_in_data_Vault.sql                    # DDS layer tables (Data Vault model, sprint)
+    │   │   ├── 8_DDS_tables_in_data_Vault_project.sql            # DDS layer tables (Data Vault model, project)
+    │   │   └── 9_CTE_tables_for_business.sql                     # Business CTEs and analytical queries
+    │
+    └── README.md
 
 ##  ETL Workflow
 
