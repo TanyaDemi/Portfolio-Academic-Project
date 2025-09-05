@@ -75,5 +75,4 @@ Schema:
     Automated ETL jobs with Airflow DAGs.
     Implemented partitioned Parquet storage for analytical queries.
 
-##  This project highlights practical skills in data lake architecture, 
-## distributed data processing with Spark, and ETL automation with Airflow.
+##  This project highlights practical skills in data lake architecture, distributed data processing with Spark, and ETL automation with Airflow.
