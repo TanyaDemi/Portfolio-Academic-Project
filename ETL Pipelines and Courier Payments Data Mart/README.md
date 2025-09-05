@@ -72,7 +72,7 @@ DAG содержит задачи на соответствующую загру
 Описание проeкта:
 Процесс создания таблиц для загрузки данных в DWH реализован с помощью Airflow.
 Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart\dags\examples\stg\init_schema_dag
+ETL Pipelines and Courier Payments Data Mart/dags/examples/stg/init_schema_dag 'https://github.com/TanyaDemi/Portfolio-Academic-Project/edit/master/ETL%20Pipelines%20and%20Courier%20Payments%20Data%20Mart/README.md'
 
 Процесс загрузки данных из источника PostgreSQL в staging-слой реализован с помощью Airflow.
 Исходный код в директории 
