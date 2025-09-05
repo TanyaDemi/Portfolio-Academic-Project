@@ -11,29 +11,23 @@ DAG содержит задачи на соответствующую загру
  
 Описание проeкта:
 Процесс создания таблиц для загрузки данных в DWH реализован с помощью Airflow.
-Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart/dags/examples/stg/init_schema_dag
+Исходный код в директории dags/examples/stg/init_schema_dag
 
 Процесс загрузки данных из источника PostgreSQL в staging-слой реализован с помощью Airflow.
-Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart\dags\examples\stg\bonus_system_ranks_dag
+Исходный код в директории dags\examples\stg\bonus_system_ranks_dag
 
 Процесс загрузки данных из источника MongoDB в staging-слой реализован с помощью Airflow.
-Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart\dags\examples\stg\order_system_restaurants_dag
+Исходный код в директории dags\examples\stg\order_system_restaurants_dag
 
 Процесс загрузки данных из источника API в staging-слой реализован с помощью Airflow.
-Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart\dags\examples\stg\project\1_project_stg_ddl_api_loader_dags.py
+Исходный код в директории dags\examples\stg\project\1_project_stg_ddl_api_loader_dags.py
 
 
 Процесс загрузки данных в источнике PostgreSQL в dds слой реализован с помощью Airflow.
-Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart\dags\examples\stg\project\2_project_stg_dds_api_tables_dags.py
+Исходный код в директории dags\examples\stg\project\2_project_stg_dds_api_tables_dags.py
 
 Процесс загрузки данных в источнике PostgreSQL в cdm слой реализован с помощью Airflow.
-Исходный код в директории 
-ETL Pipelines and Courier Payments Data Mart\dags\examples\stg\project\3_project_dwh_tables_dags.py
+Исходный код в директории dags\examples\stg\project\3_project_dwh_tables_dags.py
 
 
 Архитектура и модель данных:
