@@ -1,10 +1,7 @@
- _____________________________________________________________________________
-|                         Data Engineering Project №6:                        |
-|                                                                             |
-|                Final Project — Analytical Data Warehouse                    |
-|_____________________________________________________________________________|
+# Data Engineering Project №6:
+# Final Project — Analytical Data Warehouse 
 
-### Project Overview
+# Project Overview
 
 This project demonstrates the development of an analytical Data Warehouse using 
 Apache Airflow, PostgreSQL, and Vertica.
