@@ -43,34 +43,34 @@ spark = SparkSession.builder \
 
 ### 1. Исходные данные
 - `/user/master/data/geo/events/` - сырые данные событий 
-схема данных:
-    root
-     |-- event: struct (nullable = true)
-     |    |-- admins: array (nullable = true)
-     |    |    |-- element: long (containsNull = true)
-     |    |-- channel_id: long (nullable = true)
-     |    |-- datetime: string (nullable = true)
-     |    |-- media: struct (nullable = true)
-     |    |    |-- media_type: string (nullable = true)
-     |    |    |-- src: string (nullable = true)
-     |    |-- message: string (nullable = true)
-     |    |-- message_channel_to: long (nullable = true)
-     |    |-- message_from: long (nullable = true)
-     |    |-- message_group: long (nullable = true)
-     |    |-- message_id: long (nullable = true)
-     |    |-- message_to: long (nullable = true)
-     |    |-- message_ts: string (nullable = true)
-     |    |-- reaction_from: string (nullable = true)
-     |    |-- reaction_type: string (nullable = true)
-     |    |-- subscription_channel: long (nullable = true)
-     |    |-- subscription_user: string (nullable = true)
-     |    |-- tags: array (nullable = true)
-     |    |    |-- element: string (containsNull = true)
-     |    |-- user: string (nullable = true)
-     |-- event_type: string (nullable = true)
-     |-- lat: double (nullable = true)
-     |-- lon: double (nullable = true)
-     |-- date: date (nullable = true)
+        схема данных:
+            root
+             |-- event: struct (nullable = true)
+             |    |-- admins: array (nullable = true)
+             |    |    |-- element: long (containsNull = true)
+             |    |-- channel_id: long (nullable = true)
+             |    |-- datetime: string (nullable = true)
+             |    |-- media: struct (nullable = true)
+             |    |    |-- media_type: string (nullable = true)
+             |    |    |-- src: string (nullable = true)
+             |    |-- message: string (nullable = true)
+             |    |-- message_channel_to: long (nullable = true)
+             |    |-- message_from: long (nullable = true)
+             |    |-- message_group: long (nullable = true)
+             |    |-- message_id: long (nullable = true)
+             |    |-- message_to: long (nullable = true)
+             |    |-- message_ts: string (nullable = true)
+             |    |-- reaction_from: string (nullable = true)
+             |    |-- reaction_type: string (nullable = true)
+             |    |-- subscription_channel: long (nullable = true)
+             |    |-- subscription_user: string (nullable = true)
+             |    |-- tags: array (nullable = true)
+             |    |    |-- element: string (containsNull = true)
+             |    |-- user: string (nullable = true)
+             |-- event_type: string (nullable = true)
+             |-- lat: double (nullable = true)
+             |-- lon: double (nullable = true)
+             |-- date: date (nullable = true)
 
 
 - `/user/tanyademi1/data/geo/cities/geo.csv` - справочник городов - файл geo.csv со структурой данных
@@ -134,14 +134,14 @@ df.show(10)
     only showing top 10 rows
 
 Схема витрины:
-root
-     |-- user_id: string
-     |-- act_city: string
-     |-- home_city: string
-     |-- travel_count: long
-     |-- travel_array: array
-     |    |-- element: string
-     |-- local_time: timestamp
+    root
+         |-- user_id: string
+         |-- act_city: string
+         |-- home_city: string
+         |-- travel_count: long
+         |-- travel_array: array
+         |    |-- element: string
+         |-- local_time: timestamp
 
 
 ### 3.2. Витрина geo_zones
@@ -149,18 +149,18 @@ root
 
 - Скрипт создания тестовой выборки в файле de-project-sprint-7\src\scripts\step_3_geo_zones.py
 
-root
-     |-- month: string (nullable = true)
-     |-- week: string (nullable = true)
-     |-- zone_id: string (nullable = true)
-     |-- week_message: long (nullable = true)
-     |-- week_reaction: long (nullable = true)
-     |-- week_subscription: long (nullable = true)
-     |-- week_user: long (nullable = true)
-     |-- month_message: long (nullable = true)
-     |-- month_reaction: long (nullable = true)
-     |-- month_subscription: long (nullable = true)
-     |-- month_user: long (nullable = true)
+    root
+         |-- month: string (nullable = true)
+         |-- week: string (nullable = true)
+         |-- zone_id: string (nullable = true)
+         |-- week_message: long (nullable = true)
+         |-- week_reaction: long (nullable = true)
+         |-- week_subscription: long (nullable = true)
+         |-- week_user: long (nullable = true)
+         |-- month_message: long (nullable = true)
+         |-- month_reaction: long (nullable = true)
+         |-- month_subscription: long (nullable = true)
+         |-- month_user: long (nullable = true)
 
 !hdfs dfs -ls hdfs://rc1a-dataproc-m-dg5lgqqm7jju58f9.mdb.yandexcloud.net:8020/user/tanyademi1/data/dwh/geo/user_activity_zones
 
