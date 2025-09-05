@@ -1,10 +1,7 @@
- _____________________________________________________________________________
-|                         Data Engineering Project №1:                        |
-|                                                                             |
-|             ETL Pipelines and Courier Payments Data Mart                    |
-|_____________________________________________________________________________|
+# Data Engineering Project №1:
+# ETL Pipelines and Courier Payments Data Mart  
 
-### Project Overview
+# Project Overview
 
 This academic project demonstrates the design and implementation of an 
 ETL pipeline using Apache Airflow and Python for data orchestration. 
