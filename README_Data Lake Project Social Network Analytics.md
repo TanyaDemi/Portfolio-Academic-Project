@@ -1,9 +1,5 @@
- _____________________________________________________________________________
-|                      Data Engineering Project №2:                           |
-|                                                                             |
-|             Data Lake Project: Social Network Analytics                     |
-|_____________________________________________________________________________|
-
+# Data Engineering Project №2:
+# Data Lake Project: Social Network Analytics
 
 # Project Overview
 
