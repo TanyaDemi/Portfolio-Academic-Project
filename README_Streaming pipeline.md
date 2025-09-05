@@ -1,8 +1,5 @@
- _____________________________________________________________________________
-|                         Data Engineering Project №4:                        |
-|                                                                             |
-|                             Streaming pipeline                              |
-|_____________________________________________________________________________|
+# Data Engineering Project №4:
+# Streaming pipeline 
 
 # Project Overview
 
