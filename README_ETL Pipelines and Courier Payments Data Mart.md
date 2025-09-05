@@ -66,5 +66,4 @@ Incremental and batch data loading from heterogeneous sources.
 Normalized DDS layer and analytical CDM layer.
 A functional data mart for courier payouts with aggregated financial metrics.
 
-###  This project highlights practical skills in ETL pipeline development, 
-### data warehousing, and workflow orchestration using real-world data integration scenarios.
+###  This project highlights practical skills in ETL pipeline development, data warehousing, and workflow orchestration using real-world data integration scenarios.
