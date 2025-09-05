@@ -54,4 +54,4 @@ The database was structured into three main layers:
     PostgreSQL: Verified that records were inserted into the subscribers_feedback table and that the DDS/CDM schemas were created successfully.
     Kubernetes: Checked service pods (dds-service and cdm-service) — both were running without errors.
 
-### This project was mainly focused on deploying services, preparing the database structure, and verifying end-to-end data flow from Kafka to the warehouse and marts.
+### Result: This project was mainly focused on deploying services, preparing the database structure, and verifying end-to-end data flow from Kafka to the warehouse and marts.
