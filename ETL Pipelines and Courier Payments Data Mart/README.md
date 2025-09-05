@@ -1,5 +1,65 @@
 # Выполненная работа
 
+# ETL Pipelines and Courier Payments Data Mart
+
+## Project Description
+
+This project demonstrates the development of an ETL pipeline for building a Data Warehouse (DWH) to support courier payments analytics.  
+The workflows are orchestrated with **Apache Airflow** and process data from multiple sources (PostgreSQL, MongoDB, API) into a multi-layer DWH (stg → dds → cdm).
+
+---
+
+## ETL Processes
+
+- **Schema Initialization**  
+  Creation of schemas and tables for data loading into the DWH.  
+  *Source code:*  
+  `dags/examples/stg/init_schema_dag`
+
+- **PostgreSQL → Staging Layer**  
+  Load of bonus system data (ranks) into the staging schema.  
+  *Source code:*  
+  `dags/examples/stg/bonus_system_ranks_dag`
+
+- **MongoDB → Staging Layer**  
+  Load of restaurant and order system data into the staging schema.  
+  *Source code:*  
+  `dags/examples/stg/order_system_restaurants_dag`
+
+- **API → Staging Layer**  
+  Load of external API data into the staging schema.  
+  *Source code:*  
+  `dags/examples/stg/project/1_project_stg_ddl_api_loader_dags.py`
+
+- **Staging → DDS Layer**  
+  Transformation of staging data into normalized DDS structures (hubs, dimensions, facts).  
+  *Source code:*  
+  `dags/examples/stg/project/2_project_stg_dds_api_tables_dags.py`
+
+- **DDS → CDM Layer**  
+  Aggregation of DDS data into business-oriented marts for courier payments analytics.  
+  *Source code:*  
+  `dags/examples/stg/project/3_project_dwh_tables_dags.py`
+
+---
+
+## Data Warehouse Architecture
+
+- **Staging (stg):** raw data from source systems.  
+- **DDS (Data Delivery Store):** normalized data with dimensions and facts.  
+- **CDM (Consumer Data Mart):** aggregated data prepared for analytical queries.
+
+---
+
+## Tech Stack
+
+- **PostgreSQL** – relational data source  
+- **MongoDB** – NoSQL data source  
+- **REST API** – external data integration  
+- **Airflow** – workflow orchestration  
+- **Python** – ETL scripting  
+- **JSON** – data exchange format  
+
 # ETL-процессы
 
 Для загрузки данных в DWH используются DAG-оркестраторы Airflow на языке Python. 
